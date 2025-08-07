@@ -3,7 +3,7 @@ import os
 from pymongo import MongoClient
 
 # --- MongoDB Connection ---
-MONGO_URI = "mongodb+srv://ankushbanne23:Ankush1316@asd.qj6if.mongodb.net/ASD?retryWrites=true&w=majority"
+MONGO_URI = "mongodb+srv://ankushbanne23:6@asd.qj6if.mongodb.net/ASD?retryWrites=true&w=majority"
 client = MongoClient(MONGO_URI)
 db = client["ASD"]
 
@@ -38,3 +38,4 @@ def upload_json_file(file_path: str):
 if __name__ == "__main__":
     file_path = input("Enter path to JSON file: ").strip()
     upload_json_file(file_path)
+
